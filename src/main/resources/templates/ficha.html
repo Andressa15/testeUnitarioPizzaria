@@ -1,0 +1,23 @@
+ <!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body> 
+    <div>
+        <div th:each=" pizza: ${listaDePizza}">
+         <h2> Cardapio </h2>
+	        <h3 th:text= "${listaDePizza.sabor}"></h3>  
+	        <p th:text= "${listaDePizza.massa}"></p>    
+	        <h3 th:text= "${listaDePizza.borda}"></h3>  
+	      
+    	</div>
+    </div>
+      
+</body>
+</html>
+   
